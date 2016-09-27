@@ -33,6 +33,10 @@ app.controller('LevelController', function($scope, $http) {
     });
 });
 
+app.controller('StudentModalController', function() {
+    
+});
+
 app.directive('studentList', function() {
     return {
         restrict: 'E',
@@ -66,5 +70,14 @@ app.directive('levelList', function() {
         templateUrl: 'level-list.html',
         controller: 'LevelController',
         controllerAs: 'levelCtrl'
+    };
+});
+
+app.directive('studentModal', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'student-modal.html',
+        controller: 'StudentModalController',
+        controllerAs: 'studentModalCtrl'
     };
 });
