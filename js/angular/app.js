@@ -21,6 +21,12 @@ app.controller('PhaseController', function($scope, $http) {
 
 });
 
+app.controller('SubscriberController', function($scope, $http) {
+    $http.get("subscribers.php").then( function(response) {
+        $scope.subscriberData = response.data;
+    });
+});
+
 app.directive('studentList', function() {
     return {
         restrict: 'E',
@@ -36,5 +42,14 @@ app.directive('phaseList', function() {
         templateUrl: 'phase-list.html',
         controller: 'PhaseController',
         controllerAs: 'phaseCtrl'
+    };
+});
+
+app.directive('subscriberList', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'subscriber-list.html',
+        controller: 'SubscriberController',
+        controllerAs: 'subscriberCtrl'
     };
 });

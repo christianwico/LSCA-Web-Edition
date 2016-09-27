@@ -34,5 +34,14 @@
 
 			return $result;
 		}
+
+		public function getSubscribers() {
+			$subscribersDb = $this -> db;
+			$sql = "SELECT * FROM tblSubscribers";
+
+			$result = $subscribersDb -> Select($sql);
+
+			return $result;
+		}
 	}
 ?>

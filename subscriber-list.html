@@ -1,0 +1,17 @@
+<table class="table table-bordered table-striped table-hover">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>Email</td>
+			<td>Date Subscribed</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr data-ng-repeat="subscriber in subscriberData">
+			<td>{{ subscriber.Id }}</td>
+			<td>{{ subscriber.Email }}</td>
+			<td>{{ subscriber.DateSubscribed }}</td>
+		</tr>
+	</tbody>
+</table>

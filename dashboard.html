@@ -164,6 +164,7 @@ setInterval(GetClock,1000);
 <div class="btn-group btn-group-justified">
     <a class="btn btn-warning" data-ng-class="{ active: tab === 0 }" data-ng-click="tab = 0">List of Enrollees</a>
     <a class="btn btn-warning" data-ng-class="{ active: tab === 1 }" data-ng-click="tab = 1">Student Grades</a>
+	<a class="btn btn-warning" data-ng-class="{ active: tab === 2 }" data-ng-click="tab = 2">Subscribers</a>
 </div>
 
 <br />
@@ -171,6 +172,7 @@ setInterval(GetClock,1000);
 <div>
     <student-list data-ng-show="tab === 0"></student-list>
     <phase-list data-ng-show="tab === 1"></phase-list>
+	<subscriber-list data-ng-show="tab === 2"></subscriber-list>
 </div>
 
 
