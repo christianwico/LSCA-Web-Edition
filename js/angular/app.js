@@ -37,6 +37,18 @@ app.controller('StudentModalController', function() {
     
 });
 
+app.controller('ClassController', function($scope, $http) {
+    $http.get("classes.php").then( function(response) {
+        $scope.classData = response.data;
+    });
+});
+
+app.controller('GuardianTypeController', function($scope, $http) {
+    $http.get("guardian-types.php").then( function(response) {
+        $scope.guardianTypesData = response.data;
+    });
+});
+
 app.directive('studentList', function() {
     return {
         restrict: 'E',
@@ -79,5 +91,23 @@ app.directive('studentModal', function() {
         templateUrl: 'student-modal.html',
         controller: 'StudentModalController',
         controllerAs: 'studentModalCtrl'
+    };
+});
+
+app.directive('classList', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'class-list.html',
+        controller: 'ClassController',
+        controllerAs: 'classCtrl'
+    };
+});
+
+app.directive('guardianTypeList', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'guardian-type-list.html',
+        controller: 'GuardianTypeController',
+        controllerAs: 'guardianTypeCtrl'
     };
 });

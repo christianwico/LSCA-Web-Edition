@@ -52,5 +52,23 @@
 
 			return $result;
 		}
+
+		public function getClasses() {
+			$classesDb = $this -> db;
+			$sql = "SELECT * FROM tblclasses";
+
+			$result = $classesDb -> Select($sql);
+
+			return $result;
+		}
+
+		public function getGuardianTypes() {
+			$guardianTypesDb = $this -> db;
+			$sql = "SELECT * FROM tblguardiantypes";
+
+			$result = $guardianTypesDb -> Select($sql);
+
+			return $result;
+		}
 	}
 ?>
