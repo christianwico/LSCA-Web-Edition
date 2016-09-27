@@ -43,5 +43,14 @@
 
 			return $result;
 		}
+
+		public function getLevels() {
+			$levelsDb = $this -> db;
+			$sql = "SELECT * FROM tbllevels";
+
+			$result = $levelsDb -> Select($sql);
+
+			return $result;
+		}
 	}
 ?>

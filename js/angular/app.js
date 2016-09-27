@@ -27,6 +27,12 @@ app.controller('SubscriberController', function($scope, $http) {
     });
 });
 
+app.controller('LevelController', function($scope, $http) {
+    $http.get("levels.php").then( function(response) {
+        $scope.levelData = response.data;
+    });
+});
+
 app.directive('studentList', function() {
     return {
         restrict: 'E',
@@ -51,5 +57,14 @@ app.directive('subscriberList', function() {
         templateUrl: 'subscriber-list.html',
         controller: 'SubscriberController',
         controllerAs: 'subscriberCtrl'
+    };
+});
+
+app.directive('levelList', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'level-list.html',
+        controller: 'LevelController',
+        controllerAs: 'levelCtrl'
     };
 });
