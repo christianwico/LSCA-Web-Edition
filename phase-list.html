@@ -13,6 +13,7 @@
 			<td>Phase 3</td>
 			<td>Phase 4</td>
 			<td>Remark</td>
+			<td>Action/s</td>
 		</tr>
 	</thead>
 
@@ -26,6 +27,13 @@
 			<td>{{ phase.Phase3 }}</td>
 			<td>{{ phase.Phase4 }}</td>
 			<td>{{ phase.Remark }}</td>
+
+			<td>
+				<div class="btn-group">
+					<a class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Edit</a>
+					<a class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;Delete</a>
+				</div>
+			</td>
 		</tr>
 	</tbody>
 </table>

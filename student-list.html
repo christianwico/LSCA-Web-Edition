@@ -10,6 +10,7 @@
 			<td>Age</td>
 			<td>Guardian</td>
 			<td>Contact</td>
+			<td>Action/s</td>
 		</tr>
 	</thead>
 
@@ -22,6 +23,13 @@
 			<td>{{ student.Age }}</td>
 			<td>{{ student.Guardian }}</td>
 			<td>{{ student.GuardianContact }}</td>
+			
+			<td>
+				<div class="btn-group">
+					<a class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Edit</a>
+					<a class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;Delete</a>
+				</div>
+			</td>
 		</tr>
 	</tbody>
 </table>

@@ -4,6 +4,7 @@
 			<td>#</td>
 			<td>Email</td>
 			<td>Date Subscribed</td>
+			<td>Action/s</td>
 		</tr>
 	</thead>
 
@@ -12,6 +13,13 @@
 			<td>{{ subscriber.Id }}</td>
 			<td>{{ subscriber.Email }}</td>
 			<td>{{ subscriber.DateSubscribed }}</td>
+
+			<td>
+				<div class="btn-group">
+					<a class="btn btn-sm btn-info"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Edit</a>
+					<a class="btn btn-sm btn-danger"><span class="glyphicon glyphicon-trash"></span>&nbsp;Delete</a>
+				</div>
+			</td>
 		</tr>
 	</tbody>
 </table>
