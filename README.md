@@ -1,8 +1,8 @@
-# Student Management System v0.1.1
+# Student Management System v0.2.1
 ### In fulfillment of the requirements for CS Elective II (CSC402-2)
 
 ## Group Members:
-* Jao, Hazel
+* Jao, Hazel Dominique
 * Medina, Clarisse Mae
 * Obedoza, Jeffrie
 * Obuyes, Christian May
@@ -16,5 +16,6 @@
     * CSS3
     * Twitter Bootstrap 3.3.7
     * jQuery 3.1.0
+    * AngularJS 1.2
 * Back-End
     * PHP5
