@@ -1,0 +1,30 @@
+<select>
+	<option data-ng-repeat="level in levels" data-ng-value="level.Id">{{ level.Level }}</option>
+</select>
+
+<table class="table table-bordered table-striped table-hover">
+	<thead>
+		<tr>
+			<td>#</td>
+			<td>Name</td>
+			<td>Student Number</td>
+			<td>Level</td>
+			<td>Age</td>
+			<td>Guardian</td>
+			<td>Contact</td>
+		</tr>
+	</thead>
+
+	<tbody>
+		<tr data-ng-repeat="student in studentData">
+			<td>{{ student.Id }}</td>
+			<td>{{ student.Name }}</td>
+			<td>{{ student.StudentNumber }}</td>
+			<td>{{ student.Level }}</td>
+			<td>{{ student.Age }}</td>
+			<td>{{ student.Guardian }}</td>
+			<td>{{ student.GuardianContact }}</td>
+		</tr>
+	</tbody>
+</table>
+
