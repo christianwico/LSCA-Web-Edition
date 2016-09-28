@@ -321,15 +321,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
-			<h3>Sign up for our newsletter</h3>
-			<p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus 
-				tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
-			<div class="footer-contact">
-				<form>
-					<input type="text" placeholder="Enter your email to update" required=" ">
-					<input type="submit" value="">
-				</form>
-			</div>
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid">
 					<p>HALOVIETNAM LTD
