@@ -19,6 +19,6 @@
 	// $x = $Controller -> AddStudent($name, $studentNumber, $email, $levelId, $age, $classId, $guardian,
     //     $guardianTypeId, $contact);
 
-    $x = $Controller -> AddStudent("wics", "201302484", "a@b.c", 5, 19, 1, "wics din",
-        1, "12345");
+    $x = $Controller -> AddStudent($name, $studentNumber, $email, $levelId, $age, $classId, $guardian,
+        $guardianTypeId, $contact);
 ?>
