@@ -12,6 +12,9 @@ app.controller('StudentController', function($scope, $http) {
        $scope.studentData = response.data;
     });   
 
+    this.ShowEditModal = function(id) {
+
+    };
 });
 
 app.controller('PhaseController', function($scope, $http) {
@@ -88,10 +91,10 @@ app.directive('levelList', function() {
     };
 });
 
-app.directive('studentModal', function() {
+app.directive('addStudentModal', function() {
     return {
         restrict: 'E',
-        templateUrl: 'student-modal.html',
+        templateUrl: 'add-student-modal.html',
         controller: 'StudentModalController',
         controllerAs: 'studentModalCtrl'
     };

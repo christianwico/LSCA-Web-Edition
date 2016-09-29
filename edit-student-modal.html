@@ -1,0 +1,68 @@
+<div class="modal fade" role="dialog" id="edit-student-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Student&nbsp;</h1>
+            </div>
+
+            <div class="modal-body">
+                <form id="new-student-form" name="newStudentForm">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Hugh Janus" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="student-number">Student Number:</label>
+                        <input type="text" class="form-control" name="studentNumber" id="student-number" placeholder="201669069" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">LSCA Email:</label>
+                        <input type="text" class="form-control" name="email" id="email" placeholder="hj2016@lsca.edu.ph" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level">Level:</label>
+                        <level-list id="level" name="level"></level-list>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" min="6" max="99" name="age" id="age" placeholder="18" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="class">Class:</label>
+                        <class-list id="class"></class-list>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardian">Guardian's Name:</label>
+                        <input type="text" class="form-control" name="guardian" id="guardian" placeholder="Ben Dover" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="guardian-type">Guardian Type:</label>
+                        <guardian-type-list id="guardian-type"></guardian-type-list>
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact">Guardian's Contact:</label>
+                        <input type="text" class="form-control" name="contact" id="contact" placeholder="(069) 193 6915" />
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-success" data-dismiss="modal" data-ng-click="studentModalCtrl.AddStudent()">Add</button>
+                <button class="btn btn-warning" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

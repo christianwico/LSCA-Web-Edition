@@ -7,6 +7,11 @@ class MySQLHandler {
   var $PASSWORD = ''; 
   var $SERVER = 'localhost'; 
 
+  // var $DATABASE = 'sql6138105'; 
+  // var $USERNAME = 'sql6138105'; 
+  // var $PASSWORD = 'wp6txxUQWZ'; 
+  // var $SERVER = 'sql6.freemysqlhosting.net'; 
+
   //var $LOGFILE = "c:/mysqli.log"; 	// full path to debug LOGFILE. Use only in debug mode! 
   var $LOGFILE = "mysqli.log"; 		// full path to debug LOGFILE. Use only in debug mode! 
   var $LOGGING = false;			 	// debug on or off 
