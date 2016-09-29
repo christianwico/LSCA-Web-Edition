@@ -35,7 +35,8 @@ app.controller('LevelController', function($scope, $http) {
 
 app.controller('StudentModalController', function() {
     this.AddStudent = function() {
-        $('#new-student-form').submit();
+        $.post("add-student.php", $('#new-student-form').serialize());
+        location.reload();
     };
 });
 
