@@ -267,13 +267,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="col-md-6 map-grid">
 							<h3>Send <span>Message</span></h3>
-							<form>
-								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required=""> 
-								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-								<input type="text" value="Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}" required="">
-								<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-								<input type="submit" value="Submit Now" >
-							</form>
+														<div id="mailform" class="collapse in">
+								<form name="emailform">
+									<input type="text" pattern="[a-z|A-Z|\s]{7,25}" placeholder="Your Name *" name="name" id="name" required data-validation-required-message="Please enter your name."> 
+									<input type="email" placeholder="Your Email *" name="email" id="email" required data-validation-required-message="Please enter your email.">
+									<input type="text" placeholder="Subject Matter *" name="subject" id="subject" required data-validation-required-message="Please enter a subject.">
+									<textarea type="text" placeholder="Your Message *" name="message" id="message" required data-validation-required-message="Please enter your message."></textarea>
+									<input type="button" onclick="testfunction()" class="btn btn-info" value="Submit Now"/>
+								</form>
+							</div>
+							<div id="TY" class="collapse">
+								<p>Message sent! Thank you for your concern.</p>
+							</div>
+							<script>
+							function testfunction(){
+								var yourname = $('#name').val();
+								console.log(yourname);
+								var youremail = $('#email').val();
+								console.log(youremail);
+								var yoursubject = $('#subject').val();
+								console.log(yoursubject);
+								var yourmessage = $('#message').val();
+								console.log(yourmessage);						
+								if (yourname == "" || youremail == "" || yoursubject == "" || yourmessage == "")
+									alert("Fill up all the required(*) fields!");
+								else
+									$("#mailform, #TY").collapse();												
+							}			
+							</script>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

@@ -34,7 +34,9 @@ app.controller('LevelController', function($scope, $http) {
 });
 
 app.controller('StudentModalController', function() {
-    
+    this.AddStudent = function() {
+        $('#new-student-form').submit();
+    };
 });
 
 app.controller('ClassController', function($scope, $http) {

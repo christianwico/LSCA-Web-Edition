@@ -70,5 +70,24 @@
 
 			return $result;
 		}
+
+		public function AddStudent($name, $studentNumber, $email, $levelId, $age, $classId, $guardian,
+        $guardianTypeId, $contact) {
+			$DATABASE = 'dbweb'; 
+			$USERNAME = 'root'; 
+			$PASSWORD = ''; 
+			$SERVER = 'localhost';
+
+			$conn = new mysqli($SERVER, $USERNAME, $PASSWORD, $DATABASE);
+
+			if ($conn -> connect_error) die("Connection failed: " . $conn -> connect_error);
+
+			$stmt = $conn -> prepare("INSERT INTO tblstudents (Name, StudentNumber, " +
+				"Email, LevelId, Age, ClassId, Guardian, GuardianType, GuardianContact) " +
+				"VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+			$stmt -> bind_param("sssiiisis", $name, $studentNumber, $email, $levelId, $age, $classId,
+				$guardian, $guardianTypeId, $contact);
+			$stmt -> execute();
+		}
 	}
 ?>
